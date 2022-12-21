@@ -1,0 +1,125 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 10 0 10 0;
+
+  background-color: purple;
+}
+.search-form__input {
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border-color: white;
+  border: none;
+  padding-left: 10px;
+  color: purple;
+}
+.search-form__input:focus {
+  border-color: lightblue;
+}
+.search-form__btn {
+  background-color: white;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  border: none;
+}
+.search-form__btn:hover .search-form__btn-svg {
+  fill: lightblue;
+}
+.search-form__btn-svg {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  fill: purple;
+}
+.gallery {
+  padding: 10 0 10 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.photoCard {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.photoCard__img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+
+  transition-property: scale;
+  transition-duration: 250ms;
+}
+.photoCard__img:hover {
+  scale: 1.1;
+  border-radius: 5px;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.load-more {
+  border: none;
+  background-color: purple;
+  color: white;
+}
+.load-more:hover {
+  background-color: rgb(85, 1, 85);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10 0 10;
+}
+.info-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.info-item > b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.info-team-data {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.floatingBtn {
+  position: fixed;
+  right: 20;
+  bottom: 20;
+  border-radius: 50%;
+
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 28px;
+  padding: 0 6 0 6;
+}
+
+#changeLoadType {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: purple;
+  cursor: pointer;
+}
+#changeLoadType:hover {
+  color: lightblue;
+}
